@@ -76,7 +76,7 @@ median(table_date_steps$steps)
 ## [1] 10765
 ```
 
-The mean and median total number of steps per day are 10766 and 10755 steps respectively.
+***The mean and median total number of steps per day are 10766 and 10765 steps respectively.***
 
 ### What is the average daily activity pattern?
 
@@ -111,7 +111,7 @@ table_interval_steps [max_ave_steps_row_id, ]
 ## 104      835 206.2
 ```
 
-The interval 835 has the maximum average number of steps (206.2).
+***The interval 835 has the maximum average number of steps (206.2).***
 
 ### Imputing missing values
 
@@ -138,7 +138,7 @@ nrow(df_NA)
 ## [1] 2304
 ```
 
-The total number of rows with NA's is 2304 as shown above.
+***The total number of rows with NA's is 2304 as shown above.***
 
 For performing imputation, we replace the NA by the mean for that 5-minute interval. We already have this data in the data frame "table_interval_steps". 
 
@@ -199,7 +199,7 @@ median(table_date_steps$steps)
 ## [1] 10765
 ```
 
-The means remain same whereas there is slight change in median value.
+***Due to data imputation, the means remain same whereas there is slight change in median value.***
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
